@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photogram - Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Arial&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./CSS.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1 class="gallery-heading">Photogram Gallery</h1>
+        <div class="gallery">
+            <!-- Gallery Items -->
+            <div class="gallery-item" onclick="openModal(0)">
+                <img src="./378b20689322ac588eb8601b9476ef82.jpg" alt="Image 1" class="thumbnail">
+                <p class="caption">Image 1</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(1)">
+                <img src="./6d17eb116db8b8473e4ada49e3a98c7f.jpg" alt="Image 2" class="thumbnail">
+                <p class="caption">Image 2</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(2)">
+                <img src="./91b5cdab51e207263169904b227503b4.jpg" alt="Image 3" class="thumbnail">
+                <p class="caption">Image 3</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(3)">
+                <img src="./b980effa7f87bf2cfefe815ded8013a9.png" alt="Image 4" class="thumbnail">
+                <p class="caption">Image 4</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(4)">
+                <img src="./bd67332f00a2a29c580454f00aa5cd4e.jpg" alt="Image 5" class="thumbnail">
+                <p class="caption">Image 5</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(5)">
+                <img src="./c40b6859b5d5184b0fb67968301a6f25.jpg" alt="Image 6" class="thumbnail">
+                <p class="caption">Image 6</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(6)">
+                <img src="./eef9177d0cdfe3a70f9440f669141af0.jpg" alt="Image 7" class="thumbnail">
+                <p class="caption">Image 7</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(7)">
+                <img src="fcdf12760d61447854aba1d82301f11d.jpg" alt="Image 8" class="thumbnail">
+                <p class="caption">Image 8</p>
+            </div>
+            <div class="gallery-item" onclick="openModal(8)">
+                <img src="./Wallpaper k4_003.jpg" alt="Image 9" class="thumbnail">
+                <p class="caption">Image 9</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="modalImage" src="" alt="">
+        </div>
+        <span class="arrow arrow-left" onclick="navigateModal(-1)">&#10094;</span>
+        <span class="arrow arrow-right" onclick="navigateModal(1)">&#10095;</span>
+    </div>
+
+    <script src="./JavaScript.js"></script>
+</body>
+</html>
